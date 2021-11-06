@@ -1,131 +1,1085 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <title>Портфоліо Дмитра Долинського</title>
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="/icons/favicon.ico" type="image/x-icon">   
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Golal Language School - Офлайн та онлайн школа англійської у Луцьку</title>
 </head>
-<body>
-    <section class="main">
-        <div class="container">
-            <h1>Портфоліо</h1>
+<body id="body">
+    <div class="overlay" id="overlay">
+        <div class="modal" id="consultation">
+            <span class="icon-16 modal_close"></span>
+            <form class="feed_form" id="feedback_main_form">
+                <label class="input_data">Ваше ім’я</label>
+                <div class="input_wrapper">
+                    <input class="input_form" name="name" type="text" class="name" id="name_main_form" placeholder="ім’я" required>
+                </div>
+                <label class="input_data">Номер телефону</label>
+                <div class="input_wrapper">
+                    <input class="input_form" name="phone" id="phone_main_form" placeholder="телефон" required>
+                </div>
+                <label class="input_data">оберіть програму по якій хотіль б займатись</label>
+                    <select class="choose_program" name="choose_program" id="choose_program">
+                        <option value="Обрати_потім">Обрати потім</option>
+                        <option value="Let_s_start">Let’s start</option>
+                        <option value="Move_forward">Move forward</option>
+                        <option value="Achieve_your_goal">Achieve your goal</option>
+                        <option value="Let_s_start_together">Let’s start together</option>
+                        <option value="Perfect_team">Perfect team</option>
+                    </select>
+                <label class="input_data">вибери викладача</label>
+                    <select class="choose_teacher" name="choose_teacher" id="choose_teacher">
+                        <option value="Обрати_потім">Обрати потім</option>
+                        <option value="Нашутинська_Євгенія">Нашутинська Євгенія</option>
+                        <option value="Клямар_Ірина">Клямар Ірина</option>
+                        <option value="Уляна_Яциків">Уляна Яциків</option>
+                        <option value="Петрук_Лілія">Петрук Лілія</option>
+                        <option value="Петрук_Лілія">Sam Abrams</option>
+                    </select>
+            
+                <label class="input_data">Оберіть зручний час для дзвінка</label>
+                    <select class="choose_time" name="choose_time" id="choose_time">
+                        <option selected>будь-який час зручний</option>
+                        <option value="09:00">09:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="12:00">12:00</option>
+                        <option value="13:00">13:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                        <option value="17:00">17:00</option>
+                        <option value="18:00">18:00</option>
+                        <option value="19:00">19:00</option>
+                        <option value="20:00">20:00</option>
+                    
+                    </select>
+                    <div class="input_wrapper">
+                        <label class="privacy_container">
+                                <span class="privacy">Я згоден(а) з </span>
+                                <a href="/privacy.html">політикою конфеденційності</a><br>
+                                <input class="input_checkbox" name="checkbox" type="checkbox" required>
+                                <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    
+                <button class="button button_submit button_submit_form" id="submit_main_form">Замовити дзвінок</button>
+                
+            </form>
+        </div>
+
+</div>
+<div class="overlay" id="Let’s_start">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-6 offset-xl-3">
+                <div class="packets_item_descr" id="Let’s_start_modal">
+                    <span class="icon-16 modal_close"></span>
+                    <h3>Let’s start</h3>
+                    <div class="packets_item_descr_price">
+                        <span class="old_price">1500<sup>00</sup><span class="carrency">UAH</span></span> 
+                        <span class="new_price">799<sup>00</sup><span class="carrency">UAH</span></span>
+                    </div>
+                    <ul>
+                        <li>Безкоштовне тестування для визначення цілей</li>
+                        <li>8 онлайн-уроків на місяць в парі</li>
+                        <li>Доступ до чату школи</li>
+                    </ul>
+                    <button class="button button_mini">Оформити замовлення</button> 
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 2 -->
+<div class="overlay" id="Move_forward">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-6 offset-xl-3">
+                <div class="packets_item_descr" id="Move_forward_modal">
+                    <span class="icon-16 modal_close"></span>
+                    <h3>Move forward</h3>
+                    <div class="packets_item_descr_price">
+                        <span class="old_price">1000<sup>00</sup><span class="carrency">UAH</span></span>
+                        <span class="new_price">599<sup>00</sup><span class="carrency">UAH</span></span> 
+                    </div>
+                    <ul>
+                        <li>Безкоштовне тестування для визначення цілей</li>
+                        <li>8 онлайн-уроків на місяць</li>
+                        <li>доступ до марафонів школи</li>
+                        <li>доступ до розмовних клубів школи</li>
+                        <li>доступ до чату школи</li>
+                        <li>перевірка домашнього завдання викладачем</li>
+                        <li>планування навчального процесу на платформі Trello</li>
+                    </ul>
+                    <button class="button button_mini">Оформити замовлення</button> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 3 -->
+<div class="overlay" id="Achieve_your_goal">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-6 offset-xl-3">
+                <div class="packets_item_descr" id="Achieve_your_goal_modal">
+                    <span class="icon-16 modal_close"></span>
+                    <h3>Achieve your goal</h3>
+                    <div class="packets_item_descr_price">
+                        <span class="old_price">1500<sup>00</sup><span class="carrency">UAH</span></span> 
+                        <span class="new_price">799<sup>00</sup><span class="carrency">UAH</span></span> 
+                    </div>
+                    <ul>
+                        <li>Безкоштовне тестування для визначення цілей</li>
+                        <li>8 онлайн-уроків на місяць</li>
+                        <li>Доступ до чату школи</li>
+                        <li>Доступ до марафонів школи</li>
+                        <li>Доступ до розмовних клубів школи</li>
+                        <li>Поступ до бази школи(відео, подкасти, корисні ресурси)</li>
+                        <li>Перевірка домашнього завдання викладачем</li>
+                        <li>Щоденна програма з додатковими завданнями</li>
+                    </ul>
+                    <button class="button button_mini">Оформити замовлення</button> 
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+
+
+<!-- GROUP -->
+<!-- 1 -->
+<div class="overlay" id="Let’s_start_together">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-6 offset-xl-3">
+                <div class="packets_item_descr" id="Let’s_start_together_modal">
+                    <span class="icon-16 modal_close"></span>
+                    <h3>Let’s start together</h3>
+                    <div class="packets_item_descr_price">
+                        <span class="old_price">1800<sup>00</sup><span class="carrency">UAH</span></span> 
+                        <span class="new_price">999<sup>00</sup><span class="carrency">UAH</span></span> 
+                    </div>
+                    <ul>
+                        <li>Безкоштовне тестування для визначення цілей</li>
+                        <li>8 онлайн-уроків на місяць в парі</li>                   
+                        <li>Доступ до марафонів школи</li>
+                        <li>Доступ до розмовних клубів школи</li>
+                        <li>Доступ до чату школи</li>
+                        <li>Планування навчального процесу на платформі Trello</li>
+                        <li>Щоденна програма з додатковими завданнями</li>
+                    </ul>
+                    <button class="button button_mini">Оформити замовлення</button> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 2 -->
+<div class="overlay" id="Perfect_team">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-6 offset-xl-3">
+                <div class="packets_item_descr" id="Perfect_team_modal">
+                    <span class="icon-16 modal_close"></span>
+                    <h3>Perfect team</h3>
+                    <div class="packets_item_descr_price">
+                        <span class="old_price">1800<sup>00</sup><span class="carrency">UAH</span></span> 
+                        <span class="new_price">999<sup>00</sup><span class="carrency">UAH</span></span> 
+                    </div>
+                    <ul>
+                        <li>Безкоштовне тестування для визначення цілей</li>
+                        <li>8 онлайн-уроків на місяць в міні групі(4-6 студентів)</li>  
+                        <li>Доступ до марафонів школи</li>
+                        <li>Доступ до розмовних клубів школи</li>
+                        <li>Доступ до чату школи</li>
+                        <li>Перевірка домашнього завдання викладачем</li>
+                        <li>Планування навчального процесу на платформі Trello</li>
+                    </ul>
+                    <button class="button button_mini">Оформити замовлення</button> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <section class="promo">
+        <header>
+            <a><img src="./icons/logo_site.svg" alt="logo_site" class="logo_site"></a>  
+            <a class="hamburger">
+                <div class="hamburger_line"></div>
+                <div class="hamburger_line"></div>
+                <div class="hamburger_line"></div>
+            </a>                      
+            <nav class="menu_list">
+                <ul>
+                    <li class="menu_item"><a href="#content">Можливості</a></li>
+                    <li class="menu_item"><a href="#slider">Викладачі</a></li>
+                    <li class="menu_item"><a href="#packets">Програми</a></li>
+                    <li class="menu_item"><a href="#questions">Питання</a></li>
+                    <li class="menu_item"><a href="#reviews">Відгуки</a></li>
+                </ul>
+            </nav>        
+        </header>
+        <div class="alert alert-success" role="alert" id="alert_header">
+            <h4 class="alert-heading">Заявку прийнято</h4>
+            <hr>
+            <p>З вами зв’яжуться найближчим часом</p>
+        </div>
+        <div class="container">                   
             <div class="row">
-                <div class="col-sm-3 col-12 col-xl-3 offset-xl-2 offset-lg-2">
-                    <div class="avatar">
-                        <img src="img/avatar.png" alt="Дмитро Долинський">
+                <div class="order-2 order-md-1 col-md-8 col-lg-6 col-xl-6">
+                    <div class="promo_info">
+                        <h1><span>Goal language school</span> - це сучасна онлайн школа вивчення англійськоЇ мови</h1> 
+                        
+                        <h2 class="descr">Set and achieve your goals!
+                            Ставте цілі та досягайте їх!</h2>
+                        <button class="button" id="button">Записатись на заняття</button>
+                    </div>   
+                </div> 
+                <div class="offset-2 col-8 order-sm-1 order-md-1 col-md-4 offset-md-0 offset-lg-1 col-lg-5 offset-xl-1 col-xl-5">
+                    <div class="logo_big">
+                        <img src="./img/logo_big.svg" alt="promo_wave" class="promo_wave">
+                    </div>
+                
+                </div>
+            </div> 
+              
+        </div>   
+       
+    </section>
+    <section class="content" id="content">
+        <div class="container">
+            <h2 class="subheader">Хто ми?</h2>
+            <div class="row">
+                
+
+                <div class="col-sm-12 col-md-3 col-lg-3  col-xl-3">
+                   <span class="icon-25"></span> 
+                   <!-- <img class="we" src="img/we.svg" alt="">-->
+                </div>
+
+                <div class="col-md-9 col-lg-9 col-xl-9">
+
+                    <div class="who_are_we_info_descr">
+                        <p><b>Goal language school</b> - це сучасна онлайн школа англійської мови, де ви з легкістю досягнете своїх цілей.</p> 
+                        <p>У нас ви можете вчити саме ту англійську, яка вам потрібна - для подорожей, для роботи та бізнесу, для успішного складання іспитів, для вільного спілкування. В нашій школі ви отримуєте повне занурення в мовне середовище - можливість навчатися з носієм мови, розмовні клуби, марафони та експрес-курси, доступ до чатів школи та онлайн бази.</p>
+                    </div>  
+                    
+                </div>
+                    
+                
+
+            </div>
+
+            
+
+            <div class="row">
+
+                    <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                        <div class="content_top_info_wrapper_item">
+                            <span class="icon icon-11"></span>
+                            <div class="info"><span><b>16200+</b></span><br>проведених уроків</div>  
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                        <div class="content_top_info_wrapper_item">
+                            <span class="icon icon-12"></span>
+                            <div class="info"><span><b>800+</b></span><br>студентів</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                        <div class="content_top_info_wrapper_item">
+                            <span class="icon icon-10"></span>
+                            <div class="info"><span><b>16 років</b></span><br>досвіду</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                        <div class="content_top_info_wrapper_item">
+                            <span class="icon icon-13"></span>
+                            <div class="info"><span><b>100+</b></span><br>закордонних студентів</div> 
+                        </div>
+                    </div>
+            </div>
+                
+       
+        
+
+            <h2 class="subheader subheader_why_are_we">Твої можливості з <b>Goal language school</b></h2>
+
+        
+            <div class="row">
+                <div class="col-sm-6 offset-lg-1 col-lg-5 offset-xl-0 col-xl-4">
+                    <div class="content_item">
+
+                        <div class="row no-gutters">
+
+                            <div class="col-2">
+                                <span class="icon_cont icon-9"></span>
+                            </div>
+
+                            <div class="col-10 align-items-botton content_item_header">
+                                <h3 class="sub-subheader sub-subheader_content"><b>Доступ до бази школи</b></h3>
+                            </div>
+
+                        </div>
+
+                        <div class="descr">Надаємо нашим студентам доступ до бази школи, де ви можете завантажити англомовну літературу, фільми, почитати корисні статті та завантажити чек-листи.</div>
+                        
+                    </div>
+                </div>   
+                <div class="col-sm-6 col-lg-5 col-xl-4">
+                    <div class="content_item">
+
+                        <div class="row no-gutters">
+
+                            <div class="col-2">
+                                <span class="icon_cont icon-1"></span>
+                            </div>
+
+                            <div class="col-10 align-items-botton content_item_header">
+                                <h3 class="sub-subheader sub-subheader_content"><b>Пробне заняття</b></h3>
+                            </div>
+
+                        </div>
+
+                        <div class="descr">Безкоштовно визначаємо рівень мови та ваші цілі</div>
+                        
                     </div>
                 </div>
-                <div class="col-sm-9 col-lg-5 col-xl-5"> 
-                    <div class="about">
-                        <h3>Дмитро Долинський</h3>
-                        <h4>Графічний дизайнер</h4>
-                        <ul>
-                            <li>Зовнішня реклама</li>
-                            <li>Друкована поліграфія</li>                           
-                            <li>Баннери в соцмережі</li>
-                            <li>Сайти візитки (дизайн та верстка)</li>
-                            <li>Розробка фірмового стилю</li>
-                        </ul>
+                <div class="col-sm-6 offset-lg-1 col-lg-5 offset-xl-0 col-xl-4">
+                    <div class="content_item">
+
+                        <div class="row no-gutters">
+
+                            <div class="col-2">
+                                <span class="icon_cont icon-2"></span>
+                            </div>
+
+                            <div class="col-10 align-items-botton content_item_header">
+                                <h3 class="sub-subheader sub-subheader_content"><b>ОФЛАЙН ТА ОНЛАЙН УРОКИ</b></h3>
+                            </div>
+
+                        </div>
+
+                        <div class="descr">У нас ви можете обрати зручний формати навчання: офлайн чи онлайн навчання. Наш офіс знаходиться в місті Луцьку.</div>
+                        
                     </div>
+                </div>
+                <div class="col-sm-6 col-lg-5 col-xl-4">
+                    <div class="content_item">
+
+                        <div class="row no-gutters">
+
+                            <div class="col-2">
+                                <span class="icon_cont icon-3"></span>
+                            </div>
+
+                            <div class="col-10 align-items-botton content_item_header">
+                                <h3 class="sub-subheader sub-subheader_content"><b>РЕГУЛЯРНІ РОЗМОВНІ КЛУБИ</b></h3>
+                            </div>
+
+                        </div>
+
+                        <div class="descr">Регулярні розмовні клуби Проводимо розмовні клуби за рівнями щомісяця</div>
+                        
+                    </div>
+                </div>
+                <div class="col-sm-6 offset-lg-1 col-lg-5 offset-xl-0 col-xl-4">
+                    <div class="content_item">
+
+                        <div class="row no-gutters">
+
+                            <div class="col-2">
+                                <span class="icon_cont icon-4"></span>
+                            </div>
+
+                            <div class="col-10 align-items-botton content_item_header">
+                                <h3 class="sub-subheader sub-subheader_content"><b>Коучинговий підхід</b></h3>
+                            </div>
+
+                        </div>
+
+                        <div class="descr">Ми визначаємо ваші цілі та мотивуємо вас до їх досягнення</div>
+                        
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-5 col-xl-4">
+                    <div class="content_item">
+
+                        <div class="row no-gutters">
+
+                            <div class="col-2">
+                                <span class="icon_cont icon-5"></span>
+                            </div>
+
+                            <div class="col-10 align-items-botton content_item_header">
+                                <h3 class="sub-subheader sub-subheader_content"><b>Інтенсиви</b></h3>
+                            </div>
+
+                        </div>
+
+                        <div class="descr">Проводимо марафони та експрес курси</div>
+                        
+                    </div>
+                </div>
+                <div class="col-sm-6 offset-lg-1 col-lg-5 offset-xl-0 col-xl-4">
+                    <div class="content_item">
+
+                        <div class="row no-gutters">
+
+                            <div class="col-2">
+                                <span class="icon_cont icon-6"></span>
+                            </div>
+
+                            <div class="col-10 align-items-botton content_item_header">
+                                <h3 class="sub-subheader sub-subheader_content"><b>НОСІЇ МОВИ</b></h3>
+                            </div>
+
+                        </div>
+
+                        <div class="descr">Можливість навчатися у носія мови</div>
+                        
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-5 col-xl-4">
+                    <div class="content_item">
+
+                        <div class="row no-gutters">
+
+                            <div class="col-2">
+                                <span class="icon_cont icon-7"></span>
+                            </div>
+
+                            <div class="col-10 align-items-botton content_item_header">
+                                <h3 class="sub-subheader sub-subheader_content"><b>ІНДИВІДУАЛЬНИЙ ПІДХІД</b></h3>
+                            </div>
+
+                        </div>
+
+                        <div class="descr">Персональний план вивчення мови для кожного студента</div>
+                        
+                    </div>
+                </div>
+                <div class="col-sm-6 offset-lg-1 col-lg-5 offset-xl-0 col-xl-4">
+                    <div class="content_item">
+
+                        <div class="row no-gutters">
+
+                            <div class="col-2">
+                                <span class="icon_cont icon-8"></span>
+                            </div>
+
+                            <div class="col-10 align-items-botton content_item_header">
+                                <h3 class="sub-subheader sub-subheader_content"><b>МИ ЗАВЖДИ НА ЗВ'ЯЗКУ</b></h3>
+                            </div>
+
+                        </div>
+
+                        <div class="descr">Пропонуємо вам пакети з доступом до чату школи де ви зможете спілкуватися з іншими студентами школи та отримувати цікаву інформацію від нас.</div>
+                        
+                    </div>
+                </div>
+
+            </div>    
+        </div>
+    </section>
+    <section class="slider" id="slider">        
+        <h2 class="subheader subheader_teachers">Твої майбутні тічери</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="slider_inner">
+                        <div class="slide">
+                            <div class="left_content">
+                                <img src="./img/teachers/Evgenia.webp" class="teacher_1" alt="Євгенія Нашутинська">
+                                <div class="teacer_head">
+                                    <h3 class="teacer_mobile">Нашутинська Євгенія</h3>
+                                    <h3 class="teacer_post_mobile">Засновниця школи</h3>
+                                </div>
+                                
+                                
+                                <button class="button button_slider">записатись на заняття</button>
+                                
+                            </div>
+                            <div class="right_content">
+                                <h3 class="teacer_name"><b>Нашутинська Євгенія</b></h3>
+                                <h3 class="teacer_post">Засновниця школи</h3>
+                                <div class="descr">
+                                    <ul>
+                                        <li>15 років досвіду викладання англійської (З них 2 роки он-лайн та рік роботи в країні Ізраїль)</li>
+                                        <li>500+ задоволених клієнтів з України, Ізраїля, Росії</li>
+                                        <li>Викладаю різним віковим категоріям</li>
+                                        <li>Організатор конференції для вчителів англійської мови «Wow conference»</li>
+                                        <li>Cпікер конференції-тренінгу «Світ розМОВИ», «Wow conference»</li>
+                                        <li>Автор методики вивчення англійської мови для дітей з синдромом Дауна</li>
+                                        <li>Власник бренд-проекту «English with Jonnnik»</li>
+                                        <li>Керівник, директор англомовного творчого центру Jonnniks Academy Of Success</li>
+                                        <li>Переможець у номінації «Добрі справи», премії «Людина року-2015. Волинь»</li>      
+                                    </ul>
+ 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="left_content">
+                                <img src="./img/teachers/Iryna.webp" class="teacher_1" alt="Клямар Ірина">
+                                <div class="teacer_head">
+                                    <h3 class="teacer_mobile">Клямар Ірина</h3>
+                                </div>
+                               
+                                
+                                
+                                <button class="button button_slider">записатись на заняття</button>
+                                
+                            </div>
+                            <div class="right_content">
+                                <h3 class="teacer_name"><b>Клямар Ірина</b></h3>
+                                <div class="descr">Викладаю англійську мову для дітей різного віку.
+                                    Студентка ВНУ факультету іноземної філології  з сучасним поглядом на вивчення англійської мови.
+                                    Маю активну життєву позицію-займаюся волонтерством (волонтер Міжнародного літературного фестивалю «Фронтера 2020»
+                                    <br><br>  Досвід роботи - координатор Teens English Speaking Club у Молодіжному центрі Волині.»  
+                                    Готова працювати з наполегливими учнями та вважаю вивчення англійської  обов‘язковою складовою в сучасному світі.
+                                    Проводжу індивідуальні/групові заняття англійської мови
+                                    <br><br><br>   *увага приділяється не тільки граматиці, а й розмовній англійській😉
+                                </div>
+                            </div>
+                        </div> 
+
+
+                        <div class="slide">
+                            <div class="left_content">
+                                <img src="./img/teachers/Uliana.webp" class="teacher_1" alt="Клямар Ірина">
+                                <div class="teacer_head">
+                                    <h3 class="teacer_mobile">Уляна Яциків</h3>
+                                </div>
+
+                               
+                                <button class="button button_slider">записатись на заняття</button>
+                                
+                            </div>
+                            <div class="right_content">
+                                <h3 class="teacer_name"><b>Уляна Яциків</b></h3>
+                                <div class="descr">
+                                    Вже протягом 3 років навчаю учнів різного віку. Наймолодшому моєму учневі 7 років, а найстаршому 36. Намагаюсь бути не лише вчителем, але й другом та мотиватором.<br><br>Брала участь в багатьох конференціях для вчителів англійської мови, зокрема, “WOW Conference 2020”,  “Language booster”, "Classroom management". Я є автором  граматичних та лексичних онлайн марафонів для підлітків. Поглиблено вивчала мову ще в школі, де з 15 років навчалася з носієм мови. Також, щоліта відвідувала американські англомовні табори, де покращувала свої розмовні навички. На своїх уроках я доступно пояснюю матеріал та стараюсь знайти підхід до кожного учня.
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="left_content">
+                                
+
+                                <img src="./img/teachers/Lilia.webp" class="teacher_1" alt="Петрук Лілія">
+                                <div class="teacer_head">
+                                    <h3 class="teacer_mobile">Петрук Лілія</h3>
+                                </div>
+
+                                <button class="button button_slider">записатись на заняття</button>
+                                
+                            </div>
+                            <div class="right_content">
+                                <h3 class="teacer_name"><b>Петрук Лілія</b></h3>
+                                <div class="descr"> Викладач англійської мови для дітей дошкільного та шкільного віку. 
+                                    Чотири роки педагогічного досвіду. <br><br>
+                                    У своїй роботі використовую індивідуальний підхід до кожного учня. Вважаю, що для досягнення хороших результатів  
+                                    варто творчо, креативно та цікаво подавати матеріал, чим послуговуюсь у своїй педагогічній діяльності. Також використовую 
+                                    різноманітні методи навчання відповідно до особливостей, уподобань та віку учня. 
+                                    <br><br>
+                                    На мою думку, сучасний вчитель повинен всебічно розвиватись та постійно прагнути покращувати свої професійні вміння та якості. 
+                                    Тому постійно відвідую різноманітні конференції для викладачів іноземних мов. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="left_content">
+                                
+
+                                <img src="./img/teachers/Sam.webp" class="teacher_1" alt="Sam Abrams">
+                                <div class="teacer_head">
+                                    <h3 class="teacer_mobile">Sam Abrams</h3>
+                                </div>
+
+                                <button class="button button_slider">записатись на заняття</button>
+                                
+                            </div>
+                            <div class="right_content">
+                                <h3 class="teacer_name"><b>Sam Abrams</b></h3>
+                                <div class="descr"> 
+                                    <ul>
+                                        <li>Викладаю англійську вже більше 10 років.</li>
+                                        <li>Отримав  сертифікат TEFL  для вчителів англійської мови як другої іноземної.</li>
+                                        <li>Навчав англійської студентів з України, Італії, Словакії, Японії, Тайвані,  та В'єтнаму.</li>
+                                        <li>Фокусуюся на комунікативному підході до вивчення мови і використовую креативність, щоб нести англійську в маси.</li>
+                                         
+                                    </ul>
+                                    Я носій англійської мови і фокусуюся на Американсткій англійській
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>     
+            </div>
+        </div>       
+
+        <div class="wawe"></div>
+        
+
+    </section>
+    <section class="packets" id="packets">
+        <div class="container">
+            
+                <!-- col-md-4 -->
+            <div class="row" id="packets_header_row">
+                <div class=" col-lg-4 col-xl-6">
+                    <h2 class="subheader">Пакети програм</h2>
+                </div>
+                <!-- col-md-6 offset-md-1 -->
+                <div class=" col-lg-5 offset-lg-3 col-xl-4 offset-xl-2 nav_box">
+                    <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="pills-individual-tab" data-toggle="pill" href="#pills-individual" role="tab" aria-controls="pills-individual" aria-selected="true">Індивідуальні</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-group-tab" data-toggle="pill" href="#pills-group" role="tab" aria-controls="pills-group" aria-selected="false">Групові</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>  
+            
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-individual" role="tabpanel" aria-labelledby="pills-individual-tab">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 col-xl-4">
+                            <div class="packets_item">
+                                <img src="./img/SEARCH.svg" alt="SEARCH">
+                                <h3>Let’s start</h3>
+                                <div class="descr">
+                                    Ви супер-зайняті однак хочете нарешті почати вивчати англійську? Рекомендуємо почати з пакету "Let's start" ! Оптимальна для старту кількість уроків та персональна програма вивчення англійської дозволять вам впевнено та спокійно дійти до вашої цілі! А ще доступ до чату школи де ви зможете обмінюватися успіхами з іншими студентами нашої школи.            
+                                </div>
+                                <div class="packets_item_price">
+                                    <span class="old_price">1500<sup>00</sup><span class="carrency">UAH</span></span>
+                                    <span class="new_price">799<sup>00</sup><span class="carrency">UAH</span></span> 
+                                </div>
+                                <button class="button button_detail">Детальніше</button>
+                            </div>  
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-4">
+                            <div class="packets_item">
+                                <img src="./img/IDEA.svg" alt="IDEA">
+                                <h3>Move forward</h3>
+                                <div class="descr">
+                                    Ви вже почали вивчати англійську та хочете продовжити практикувати мову регулярно? Пропонуємо пакет "Move forward!"! Наші марафони та розмовні клуби не дадуть вам нудьгувати, а персональна програма та організація навчального процесу триматимуть вас в тонусі.             
+                                </div>
+                                <div class="packets_item_price">
+                                    <span class="old_price">1000<sup>00</sup><span class="carrency">UAH</span></span>
+                                    <span class="new_price">599<sup>00</sup><span class="carrency">UAH</span></span> 
+                                </div>
+                                <button class="button button_detail">Детальніше</button>
+                            </div>  
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-4">
+                            <div class="packets_item">
+                                <img src="./img/CUP.svg" alt="CUP">
+                                <h3>Achieve your goal</h3>
+                                <div class="descr">
+                                    Досягніть вашої цілі швидко та максимально якісно! Повний пакет послуг дозволить вам повністю зануритися в атмосферу вивчення англійської мови. Особливість цього пакету - щоденні міні-завдання для покращення ваших навичок!              
+                                </div>
+                                <div class="packets_item_price">
+                                    <span class="old_price">1500<sup>00</sup><span class="carrency">UAH</span></span>
+                                    <span class="new_price">799<sup>00</sup><span class="carrency">UAH</span></span> 
+                                </div>
+                                <button class="button button_detail">Детальніше</button>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="pills-group" role="tabpanel" aria-labelledby="pills-group-tab">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 offset-lg-2 col-xl-4 offset-xl-2">
+                            <div class="packets_item">
+                                <img src="./img/together.svg" alt="together">
+                                <h3>Let’s start together</h3>
+                                <div class="descr">
+                                    Маєте партнера з спільною метою? Почніть її досягати разом - заняття в міні-групах додадуть мотивації та дозволять швидко та якісно дійти до мети!              
+                                </div>
+                                <div class="packets_item_price">
+                                    <span class="old_price">1800<sup>00</sup><span class="carrency">UAH</span></span>
+                                    <span class="new_price">999<sup>00</sup><span class="carrency">UAH</span></span> 
+                                </div>
+                                <button class="button button_detail">Детальніше</button>
+                            </div>  
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-4">
+                            <div class="packets_item">
+                                <img src="./img/team.svg" alt="team">
+                                <h3>Perfect team</h3>
+                                <div class="descr">
+                                    Що може бути краще ніж практика англійської у приємній компанії? Навчання в групах дає найкращі результати за короткий період часу!              
+                                </div>
+                                <div class="packets_item_price">
+                                    <span class="old_price">1800<sup>00</sup><span class="carrency">UAH</span></span>
+                                    <span class="new_price">999<sup>00</sup><span class="carrency">UAH</span></span> 
+                                </div>
+                                <button class="button button_detail">Детальніше</button>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wawe_bottom"></div>
+    </section>
+    <section class="questions" id="questions">
+        <div class="container">
+            <h2 class="subheader subheader_questions">питання та відповіді</h2>
+            <div class="row">
+                
+                <div class="col-lg-4 col-xl-5">
+                    <span class="questions_img icon-26"></span>
+                    
+                </div>
+                <div class="col-lg-8 col-xl-7">
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <span class="icon-17 black_iconn"></span>
+                                    <span class="icon-18 yellow_iconn"></span>  
+                                    <span class="descr">Скільки часу триває один онлайн урок?</span>
+                                    <span class="arrow icon-14"></span>                   
+                                </button>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    Онлайн урок триває одну годину. У випадку запізнення студента заняття закінчується в той час, в який воно повинно закінчитися за звичним графіком.
+                                    <br>Розмовний клуб триває одну годину і двадцять хвилин.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    <span class="icon-17 black_iconn"></span>
+                                    <span class="icon-18 yellow_iconn"></span>                    
+                                    <span class="descr">У мене щільний робочий графік і мало часу на навчання. Який вихід?</span>
+                                    <span class="arrow icon-14"></span>    
+                                </button>
+                            </div>
+                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                На початку навчального року у вас є можливість обрати зручний для вас час для занять: ранок, вечір або день, та комфортну для вас кількість занять на тиждень.                            </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                    <span class="icon-17 black_iconn"></span>
+                                    <span class="icon-18 yellow_iconn"></span>   
+                                    <span class="descr">Чи можу я оплатити заняття після проходження курсу?</span>
+                                    <span class="arrow icon-14"></span>  
+                                </button>
+                            </div>
+                            <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    У нас абонементна система оплати - ви оплачуєте певну кількість уроків на місяць наперед і тоді можете розпочати ваше навчання.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    <span class="icon-17 black_iconn"></span>
+                                    <span class="icon-18 yellow_iconn"></span>    
+                                    <span class="descr"> Що робити якщо я не знаю свій рівень англійської?</span>
+                                    <span class="arrow icon-14"></span>  
+                                </button>
+                            </div>
+                            <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
+                                <div class="card-body">
+                                    Звертайтеся до нас і ми безкоштовно протестуємо ваш рівень, визначимо цілі та складемо персональну програму навчання, яка підходить саме вам.                              </div>
+                                </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">   
+                                    <span class="icon-17 black_iconn"></span>
+                                    <span class="icon-18 yellow_iconn"></span>    
+                                    <span class="descr">У мене змінилися плани і вивчення англійської мені більше не потрібне. Чи можу я повернути кошти?</span>
+                                    <span class="arrow icon-14"></span>  
+                                </button>
+                            </div>
+                            <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordion">
+                                <div class="card-body">
+                                    Так, ви можете використати оплачені уроки протягом 9 місяців з дати оплати або подарувати їх родичу або другу, або ж повернути кошти.                              </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="feedback" id="feedback">
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-2 col-md-8 offset-lg-0 col-lg-5 offset-xl-0 col-xl-6">
+                    <h2 class="subheader subheader_feedback">залиште номер і наш менеджер відповість на всі ваші питання по телефону</h2>
+                </div>
+                <div class="offset-md-2 col-md-8 offset-lg-1 col-lg-6 offset-xl-0 col-xl-6">
+                    <form class="feedback_feed_form" id="feedback_form">
+                        <div class="input_wrapper">
+                            <input name="name" type="text" id="feedback_name" placeholder="ім’я" required>
+                        </div>
+                        <div class="input_wrapper">
+                            <input name="phone" id="feedback_phone" placeholder="телефон" required>
+                        </div>
+                        <button class="button button_submit" id="submit_button">Записатись на заняття</button>
+                        <div class="alert alert-success" id="alert_feedback" role="alert">
+                            <h4 class="alert-heading">Заявку прийнято</h4>
+                            <hr>
+                            <p>З вами зв’яжуться найближчим часом</p>
+                          </div>
+                    </form>
+                   
+                </div>
+            </div>
+             
+            </div>
+    </section>
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4">
+                    <h2 class="subheader subheader_reviews">Відгуки студентів</h2>
+                </div>
+                <div class="offset-lg-2 col-lg-8 offset-xl-1 col-xl-7">
+                    <div class="reviews_slider_inner">
+                        <div class="slide">
+                            
+                            
+
+                            <div class="slide_item">
+                                <div class="slide_item_avatar">
+                                    <img src="./img/reviews/viktoria_blayzer.webp" alt="reviews_img">    
+                                </div>
+                                <div class="descr">
+                                    <h3 class="sub-subheader sub-subheader_reviews">Victoria Gleyzer</h3>
+                                    <div class="reviews_body"><span>Моя дочь занимается английским с Евгенией уже второй год: сначала в Израиле, а затем продолжила заниматься он-Лайн! Женя отличный педагог и человек<span class="dots">...</span><span class="review_more-detail">. ☀️У дочери высший бал по англ языку! Очень скучаю по личному общению с Женей. 💕 Английский ТОЛЬКО с тобой!!!</span> <a class="more">Показати більше...</a></span></div>
+                                </div>
+                            </div>
+                            <div class="slide_item">
+                                <div class="slide_item_avatar">
+                                    <img src="./img/reviews/polina_volkova.webp" alt="reviews_img">    
+                                </div>
+                                <div class="descr">
+                                    <h3 class="sub-subheader sub-subheader_reviews">Полина Волкова</h3>
+                                    <div class="reviews_body"><span>привет, ты не поверишь что со мной сегодня случилось бооооже я таак радаа🥺🥺😆😆😁😄😃😀 я запустила сториз с тем как я учю песню каторую мы<span class="dots">...</span><span class="review_more-detail"> с тобой вчера учили и конечно же я отметила певицу Елли но я не ожидала что она увидет так вот она увидела и дуже поместила к себе в зторис  и даже похвалила меня а еше она мне прислала сердечки в директ и я ей ответила что я готовлю ролик под её песню и она ответила благодарностю я не возможно рада 😄😁😀😃😃😃😃🥺🥺🥺😋</span> <a class="more">Показати більше...</a></span></div>
+                                </div>
+                            </div>
+                                 
+                        </div>  
+
+                        
+                        <div class="slide">
+                            
+                          
+
+                            <div class="slide_item">
+                                <div class="slide_item_avatar">
+                                    <img src="./img/reviews/dia_niki.webp" alt="reviews_img">    
+                                </div>
+                                <div class="descr">
+                                    <h3 class="sub-subheader sub-subheader_reviews">DIA NIKI</h3>
+                                    <div class="reviews_body"><span>Мои дети принимали участие в разговорных клубах и марафоне времен! Не только я, как мама, была в этом заинтересована, но и сами дети проявляли интерес и всегда спешили на занятия<span class="dots">...</span><span class="review_more-detail">. Мои мальчики заняли 2е место в марафоне и им ОООЧЧЧЕЕННЬ рады! Спасибо огромное Евгении и Ульяне за замечательные занятия! С приветом из Германии - Ник и Никита;)</span> <a class="more">Показати більше...</a></span></div>
+                                   
+                                </div>
+                            </div>
+                            <div class="slide_item">
+                                <div class="slide_item_avatar">
+                                    <img src="./img/reviews/svitlana_sydoruk.webp" alt="reviews_img">    
+                                </div>
+                                <div class="descr">
+                                    <h3 class="sub-subheader sub-subheader_reviews">Світлана Сидорук</h3>
+                                    <div class="reviews_body"><span>Неодноразово були учасниками ваших занять, таборів, різних вечірок і онлайн програм! Завжди все на вищому рівні!!! Безліч різноманітних методів , креативних ідей та нових технологій!!! Задоволені на всі 💯</span></div>
+                                </div>
+                            </div>
+                                 
+                        </div>
+        
+                        <div class="slide">
+                            
+                            <div class="slide_item">
+                                <div class="slide_item_avatar">
+                                    <img src="./img/reviews/dasha_volkova.webp" alt="reviews_img">    
+                                </div>
+                                <div class="descr">
+                                    <h3 class="sub-subheader sub-subheader_reviews">Даша Волкова</h3>
+                                    <div class="reviews_body"><span>Мне посчастливилось сотрудничать с Евгенией в Израиле. Она преподавала в нашем центре ХатульМадан. Достаточно было одного занятия, чтобы понять, что она уникальный педагог<span class="dots">...</span><span class="review_more-detail">. Дети к ней слетались как пчелки на мед за радостью и знаниями, за советом и поддержкой! Она влюбляет в себя с первой минуты! Она увлекает за собой и взрослых и самых маленьких! Женя никогда не останавливается! Всегда на уроке с новой идеей, методикой, игрой, проектом! Учеба с ней всегда через игру! Женя одинаково увлекательно преподает как офлайн, так и онлайн.Сколько новых форматов за всемя короны она внедрила! Онлайн уроки, разговорные клубы для подростков, недельный марафон по грамматике! Любим тебя Женечка! Успехов во всем! Спасибо за твою потрясающую работу!</span><a class="more">Показати більше...</a></span></div>
+                                </div>
+                            </div>
+
+                    
+                            <div class="slide_item">
+                                <div class="slide_item_avatar">
+                                    <img src="./img/reviews/marjana_khaba.webp" alt="reviews_img">    
+                                </div>
+                                <div class="descr">
+                                    <h3 class="sub-subheader sub-subheader_reviews">Marjana Khaba</h3>
+                                    <div class="reviews_body"><span>Компетентний, кваліфікований педагог. Може знайти підхід як до діток так і до дорослих.</span></div>
+                                </div>
+                            </div>    
+                        </div>    
+                        </div>
+                    </div>
+                </div>  
+            </div>
+    </section>
+
+    <section class="uses">
+        <div class="container">
+            <h2>Ми використовуємо ці сервіси</h2>
+            <div class="row">
+                <div class="col-lg-12 col-xl-9">
+                    <h3 class="first">Для зручного навчання</h3>
+                    <div class="uses_wapper">
+                        <span class="icon-31 vertical"></span>
+                        <span class="uses_descr">Використовуючи Trello, можна домогтися більш ефективної і злагодженої роботи команди.</span>
+                    </div>
+                    <div class="uses_wapper">
+                        <span class="icon-32 vertical"></span>
+                        <span class="uses_descr">Quizlet створює прості засоби, що дозволяють вивчати будь-який предмет.</span>
+                    </div>
+                    <div class="uses_wapper">
+                        <span class="icon-33 vertical"></span>
+                        <span class="uses_descr">Kahoot - це навчальна платформа на основі ігор, яка щороку приносить залучення та задоволення 1 мільярду гравців у школі, на роботі та вдома</span>
+                    </div>
+                    <div class="uses_wapper">
+                        <span class="icon-34 vertical"></span>
+                        <span class="uses_descr">YouTube — видеохостинг, предоставляющий пользователям услуги хранения, доставки и показа видео.</span>
+                    </div>
+
+                </div>
+                
+               
+                <div class="offset-md-0 col-md-12 offset-xl-1 col-xl-2">
+                    <div class="row">
+                        <div class="col-6 col-sm-4 col-xl-12">
+                            <h3>Чати школи</h3>
+                            <span class="icon-28 circle"></span>
+                            <span class="icon-30 circle"></span>
+                            <span class="icon-29 circle"></span>
+                        </div>
+                        <div class="col-6 col-sm-4 col-xl-12">
+                            <h3>Для уроків</h3>
+                            <span class="icon-27 circle"></span>
+                            <span class="icon-28 circle"></span>
+                        </div>
+                        <div class="col-6 col-sm-4 col-xl-12">
+                            <h3>Для марафонів</h3>
+                            <span class="icon-29 circle"></span>
+                        </div>
+                    </div>
+                    
+                    
                     
                 </div>
             </div>
         </div>
     </section>
-    <section class="adv_products">
+    
+
+
+    <footer>
         <div class="container">
-            <h2>рекламна продукція</h2>
             <div class="row">
-                <div class="col-sm-6 col-xl-4"><img class="item" src="img/valentine_day.jpg" alt="Афіша до дня св'ятого Валентина"></div>
-                <div class="col-sm-6 col-xl-4"><img class="item" src="img/WOW_Conference_for_English_teachers.jpg" alt="Афіша для конференції WOW Conference"></div>
-                <div class="col-sm-6 col-xl-4"><img class="item" src="img/mini_camp.jpg" alt="Дитячий англомовний табір"></div>
-                <div class="col-sm-6 col-xl-4"><img class="item" src="img/end.jpg" alt="Графіка для відео на YouTube"></div>
-                <div class="col-md-6 col-xl-4"><img class="item" src="img/halloween1.jpg" alt="Дитяча вечірка на halloween"></div>
-                <div class="col-sm-6 col-xl-4"><img class="item" src="img/film.jpg" alt="Запрошення на перегляд фільму"></div>
-                <div class="col-sm-6 col-xl-4"><img class="item" src="img/superprice.jpg" alt="Банер для інстаграм"></div>
-                <div class="col-sm-6 col-xl-4"><img class="item" src="img/halloween2+ticket.png" alt="Дитяча вечірка на halloween + квиток"></div>
-                <div class="col-sm-6 col-xl-4"><img class="item" src="img/thenksgiven+ticket.png" alt="Дитяча вечірка на день подяки + квиток"></div>
-            </div>
-        </div>
-    </section>
-    <section class="certificate">
-        <div class="container">
-            <h2>Сертифікати</h2>
-            <div class="row">
-                <div class="col-md-6 col-xl-6">
-                    <img class="item m-xl" src="img/certificate_for_participant.jpg" alt="Сертифікат учасника">
-                    <img class="item m-xl" src="img/certificate_for_speacker.jpg" alt="Сертифікат спікеру">
+                <div class="col-9 col-sm-6 col-md-3 col-lg-3 offset-0 offset-sm-0 offset-lg-0 col-xl-3 offset-xl-0">
+                    
+                    <div class="contact contact_logo">
+                        <div class="contact_link">
+                            
+                            
+                            <a><span class="icon-24 footer_logo"></span></a>
+                            <a class="link conf" href="/privacy.html">Політика конфеденційності</a>  
+                        </div>
+                    </div>            
                 </div>
-                <div class="col-sm-6 col-xl-6"><img class="item" src="img/camp_certificate.jpg" alt="Сертифікат про участь в таборі"></div>
-            </div>
-        </div>
-    </section>
-    <section class="logos">
-        <div class="container">
-            <h2>Логотипи</h2>
-            <div class="row">
-                <div class="col-sm-6 col-lg-5 offset-lg-1 offset-xl-0 col-xl-3">
-                    <div class="item">
-                        <img class="logo" src="img/search_face.png" alt="Search face">
-                    </div>  
-                    <h5>Логотип для стартап проекту - SEARCH FACE</h5>
-                </div>
-                <div class="col-sm-6 col-lg-5 col-xl-3">
-                    <div class="item">
-                        <img class="logo" src="img/smile.png" alt="Smile">
-                    </div>  
-                    <h5>Логотип для аглійської школи SMILE</h5>
-                </div>
-                <div class="col-sm-6 col-lg-5 offset-lg-1 offset-xl-0 col-xl-3">
-                    <div class="item">
-                        <img class="logo" src="img/wow.png" alt="Wow conference">
-                    </div>                
-                    <h5>Логотип для конференції вчителів англійської мови WOW Conference for English teachers</h5>
-                </div>
-                <div class="col-sm-6 col-lg-5 col-xl-3">
-                    <div class="item">
-                        <img class="logo" src="img/jonnnik.png" alt="Jonnnik`s academy of success">
+                <div class="col-9 col-sm-6 col-md-5 offset-0 offset-sm-0 offset-md-1 offset-lg-1 col-lg-4 offset-xl-1 col-xl-4">
+                    <div class="contact">
+                        <div class="contact_icon">
+                            <span class="icon-20"></span>
+                        </div>
+                        <div class="contact_link">
+                            <a class="link" href="tel:+380663162914">+38 (066) 316-29-14</a>
+                            <a class="link" href="tel:+380505457937">+38 (050) 545-79-37</a>
+                        </div>               
                     </div>
-                    <h5>Логотипы для англійської школи Jonnnik`s academy of success</h5>
+                    
+                    <div class="contact">
+                        <div class="contact_icon">
+                            <span class="icon-19"></span>
+                        </div>
+                        <div class="contact_link">
+                            <a class="link" href="mailto:goallanguageschool@gmail.com">goallanguageschool@gmail.com</a>
+                        </div>               
+                    </div>
+                    
                 </div>
-            </div>
+
+                <div class="col-8 col-sm-12 col-md-3 col-xl-2 offset-2 offset-sm-0 offset-md-0 offset-lg-0 offset-xl-0">
+                    
+                    <div class="contact social_wapper">
+                        
+                        <div class="social">
+                            <a class="link" href="https://www.instagram.com/goal_language_school">
+                                <span class="icon-22"></span>
+                            </a>
+                        </div>
+                        <div class="social">
+                            <a class="link" href="https://www.facebook.com/Goal-Language-School-108971437590339/">
+                                <span class="icon-21"></span>
+                            </a>
+                        </div>
+                       
+                        
+                        
+                    </div>
+                </div>
+
+               
+         <div class="col-3 col-sm-1 col-md-2 col-lg-1 offset-8 offset-sm-0 offset-md-10 offset-lg-10 offset-xl-1">
+                    <div class="arrow">
+                        <a href="#"><span class="icon-14"></span></a>
+                    </div>   
+                </div>
+            
+            
         </div>
-    </section>
-    <section class="stickers">
-        <div class="container">
-            <h2>Пакет стікерiв</h2>
-            <div class="row">
-                <div class="col-6 col-sm-4 col-lg-3 col-xl-3"><img class="item" src="img/stikers/1.png" alt="Стікер"></div>
-                <div class="col-6 offset-6 col-sm-4 offset-sm-0 offset-lg-0 col-lg-3 offset-xl-0 col-xl-3"><img class="item" src="img/stikers/2.png" alt="Стікер"></div>
-                <div class="col-6 col-sm-4 col-lg-3 col-xl-3"><img class="item" src="img/stikers/3.png" alt="Стікер"></div>
-                <div class="col-6 offset-6 col-sm-4 offset-sm-0 offset-lg-0 col-lg-3 offset-xl-0 col-xl-3"><img class="item" src="img/stikers/4.png" alt="Стікер"></div>
-                <div class="col-6 col-sm-4 col-lg-3 col-xl-3"><img class="item" src="img/stikers/5.png" alt="Стікер"></div>
-                <div class="col-6 offset-6 col-sm-4 offset-sm-0 offset-lg-0 col-lg-3 offset-xl-0 col-xl-3"><img class="item" src="img/stikers/6.png" alt="Стікер"></div>
-                <div class="col-6 col-sm-4 col-lg-3 col-xl-3"><img class="item" src="img/stikers/7.png" alt="Стікер"></div>
-                <div class="col-6 offset-6 col-sm-4 offset-sm-0 offset-lg-0 col-lg-3 offset-xl-0 col-xl-3"><img class="item" src="img/stikers/8.png" alt="Стікер"></div>
-                <div class="col-6 col-sm-4 col-lg-3 col-xl-3"><img class="item" src="img/stikers/9.png" alt="Стікер"></div>
-                <div class="col-6 offset-6 col-sm-4 offset-sm-0 offset-lg-0 col-lg-3 offset-xl-0 col-xl-3"><img class="item" src="img/stikers/10.png" alt="Стікер"></div>
-                <div class="col-6 col-sm-4 col-lg-3 col-xl-3"><img class="item" src="img/stikers/11.png" alt="Стікер"></div>   
-            </div>
+        <div class="copyright">
+            © 2020 Всі права захищено.
         </div>
-    </section>
-    <section class="footer">
-        <div class="container">
-            <h2>Контакти</h2>
-            <div class="row">
-                <div class="col-2 offset-0 offset-sm-1 col-sm-2 offset-md-0 col-md-1 col-xl-1 offset-xl-1"><img class="icon" src="icons/mail.png" alt="Email"></div>
-                <div class="col-10 offset-0 col-sm-9 col-md-5 col-xl-4"><a href="mailto:dmitro.dolinskij1@gmail.com">dmitro.dolinskij1@gmail.com</a></div>
-                <div class="col-2 offset-0 offset-sm-1 col-sm-2 offset-md-0 col-md-1 col-xl-1 offset-xl-1"><img class="icon" src="icons/f.png" alt="Facebook"></div>
-                <div class="col-10 offset-0 col-sm-9 col-md-5 col-xl-4"><a target="_blank" href="https://www.facebook.com/people/%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9-%D0%94%D0%BE%D0%BB%D0%B8%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9/100011602326007">Дмитрий Долинський</a></div>
-                <div class="col-2 offset-0 offset-sm-1 col-sm-2 offset-md-0 col-md-1 col-xl-1 offset-xl-1"><img class="icon" src="icons/phone.png" alt="Phone"></div>
-                <div class="col-10 offset-0 col-sm-9 col-md-5 col-xl-4"><a href="tel:+380505457937">+38 (050) 54-57-937</a></div>
-            </div>
         </div>
-    </section>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/scripts.js"></script>
+    <script src="./js/contact_form.js"></script>
 </body>
+   
 </html>
+
